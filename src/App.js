@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+  return <>
+    <div className="container">
+      <h1>Incrememnt/Decrement counter</h1>
+      <h4>Using React an Redux</h4>
+
+      <div className="quantity">
+        <a href="#" className="quantity_minus" title="Decrement"><span>-</span></a>
+        <input type="text" name='quantity' value="0" className="quantity_input" />
+        <a href="#" className="quantity_plus" title="Increment"><span>+</span></a>
+      </div>
+
     </div>
-  );
-}
+  </>;
+};
 
 export default App;
